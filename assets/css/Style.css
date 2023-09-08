@@ -1,0 +1,358 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: 0%;
+    font-family: 'Kanit', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sura', serif;
+color: rgb(0, 174, 199);
+color: rgb(0, 51, 160);
+
+
+}
+.header{
+    
+    height: 30px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.containerHeader{
+    background-color:white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logotipo{
+    width: 150px;
+    margin-left: 20px;
+
+}
+.logotipo .logo{
+    width: 100%;
+    height: auto; 
+}
+.login{
+    margin: 30px 30px;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+.nav{
+    width: 100%;
+    height:20px;
+    background-color:rgb(0, 51, 160);
+    padding:20px 0px;
+}
+.nav ul{
+    list-style: none;
+}
+.nav > li{
+    position: relative;
+}
+.menu{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+.submenu{
+    position: absolute;
+    display: none;
+    background-color:rgb(0, 51, 160);
+    border: solid .5px white;
+
+
+}
+.menu li:hover .submenu {
+    display: block;
+    padding: 10px 30px;
+}
+.containerPrincipal{
+    width: 100vw;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.123);
+    display: flex;
+    position: relative;
+    margin-top: 13.5%;
+}
+.perfil{
+    position: absolute;
+    bottom: 80%;
+    left: 32%;
+    color: white;
+
+}
+.caja{
+    width: 100%;
+    height: auto;
+    display:inline-block;
+    text-align:center;
+    justify-content: center; 
+    position: relative;
+    overflow: hidden;     
+}
+.caja img{
+    width: 100%;
+    height: 100%;       
+}
+.btn{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: .5s ease;
+    font-size: 20px;
+    cursor: pointer;
+}
+.caja:hover .btn{
+    transform: scale(1);
+
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.articulos{
+    width: 100vw;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.123);
+    margin: 10px 0px;
+    display: flex;
+    text-align: center;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.boxArt{
+    width: 320px;
+    height: auto;
+}
+.user{
+    width: 100%;
+    height: 450px;
+    background-image: url(../../assets/img/Seguros-SURA-Colombia.jpg);
+    background-position-x: right;
+    background-repeat:no-repeat;
+}
+.info-compañia{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 30px;
+    position: relative;
+    
+}
+.info-compañia p{
+    margin-top: 20px;
+    text-align: justify;
+}
+.info-compañia button{
+    width: 50%;
+    height: 40px;
+    border-radius: 30px;
+    border: solid 0px;
+    background-color:rgb(0, 51, 160);
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+}    
+.formulario{
+    background-color: #091f2b65;
+    border-radius: 5%;
+    color: white;
+    width: 320px;
+    height: 330px;
+    padding: 30px;
+    margin-left:40px;
+}
+
+
+.boton button{
+    width: 35vw;
+    background-color: rgb(0, 174, 199);
+    color: rgb(0, 51, 160);
+    margin: 1%;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+}    
+.pieDePagina{
+    width: 100%;
+    
+    margin: 10px 0px;
+    background-color:rgb(0, 51, 160);
+    
+}
+.footer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+}
+.box .nosotros a{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+
+
+}
+.box a img{
+    width: 150px;
+    height: auto;
+}
+.box h2{
+    color: white;
+    margin: 9px;
+}
+.box p{
+    color: white;
+    margin: 5px;
+}
+.box i{
+    color:white;
+    font-size: 25px;
+    margin: 10px;
+
+}
+@media (max-width:500px)
+{
+    .articulos
+    {
+        flex-direction: column;
+        height: auto;
+    }
+    .containerPrincipal
+    {
+        margin-top: 35%;
+    }
+    .header
+    {
+        
+        margin-top: 2px;
+    }
+    .logo{
+        width: 100px;
+        height: auto;
+    }
+    
+    .info-compañia 
+    {
+        width: 80%;
+        justify-content:start;
+        gap: 40px;
+    }
+    .info-compañia h1
+    {
+        color:rgb(87, 241, 241);
+    }
+    .info-compañia p 
+    {
+        color:rgb(87, 241, 241);
+        font-weight: bold;
+    }
+    .footer
+    {
+        flex-direction: column;
+    }
+    .box
+    {
+        text-align: justify;
+     
+    }
+    .box h2
+    {
+        text-align: left;
+        margin-left: -2px;
+    }
+    #nosotros1
+    {
+        margin-left:25px ;
+    }
+}
+
+@media (min-width:501px) and (max-width:720px)
+{
+    .perfil
+    {
+        font-size: 20px;
+        margin-left: -50px;
+    }
+    .containerPrincipal
+    {
+        margin-top: 32%;
+    }
+    .info-compañia 
+    {
+        width: 80%;
+        justify-content:start;
+        gap: 40px;
+        
+    }
+    .info-compañia h1
+    {
+        color:rgb(87, 241, 241);
+       
+    }
+    .info-compañia p 
+    {
+        color:rgb(87, 241, 241);
+        font-weight: bold;
+    }
+}
+@media (min-width:831px) and (max-width:1280px)
+{
+
+    .perfil
+    {
+        font-size: 20px;
+        margin-left: -50px;
+    }
+    .containerPrincipal
+    {
+        margin-top: 20%;
+    }
+    .user
+    {
+        width: 100%;
+        background-size: cover;
+    }
+    .info-compañia 
+    {
+        width: 50%;
+        justify-content:start;
+        gap: 40px;
+        
+    }
+    .info-compañia h1
+    {
+        color:rgb(87, 241, 241);
+       
+    }
+    .info-compañia p 
+    {
+        color:rgb(87, 241, 241);
+        font-weight: bold;
+    }
+}
